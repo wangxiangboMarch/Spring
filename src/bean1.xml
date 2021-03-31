@@ -5,4 +5,40 @@
 
     <!--配置User类的创建 -->
     <bean id="user" class="com.company.spring5.User"></bean>
+
+    <!--创建book对象-->
+    <bean id="book" class="com.company.spring5.Book">
+        <!--set方法注入属性: 需要实现set方法-->
+        <!--property完成属性的注入-->
+        <property name="bname" value="易筋经"></property>
+        <property name="bauthor" value="打磨老祖"></property>
+
+        <!-- 注入一个 null-->
+<!--        <property name="bAddress" >-->
+<!--            <null/>-->
+<!--        </property>-->
+
+        <!-- 注入一个 包含特殊值的属性-->
+        <!--
+            1、把特殊值 转译
+            2、把特殊值写到CDATA中去
+        -->
+        <property name="bAddress" >
+            <value><![CDATA[<<南京>>]]]></value>
+        </property>
+
+    </bean>
+
+    <!--创建orders对象-->
+    <!--    有参构造注入-->
+    <bean id="orders" class="com.company.spring5.Orders">
+        <constructor-arg name="oName" value="很多事"></constructor-arg>
+        <constructor-arg name="oAddress" value="合阳"></constructor-arg>
+        <!-- 通过索引注入-->
+<!--        <constructor-arg index="0" value="合阳"></constructor-arg>-->
+    </bean>
+
+    <!--
+        P 标签注入 （底层还是基于set方法注入）
+    -->
 </beans>

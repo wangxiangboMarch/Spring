@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-expression-5.3.5.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/lib/commons-logging-1.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-core-5.3.5.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/lib/spring-beans-5.3.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-context-5.3.5.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/lib/spring-context-5.3.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +37,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/spring-beans-5.3.5.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/lib/spring-core-5.3.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +46,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/lib/spring-expression-5.3.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userdao" class="com.company.spring5.dao.UserDaoImp"></bean>
+
+    <bean id="userServer" class="com.company.spring5.server.UserServer">
+        <!--注入dao对象-->
+        <!--ref 要和UserDao 里面的id 值一样-->
+        <property name="userDao" ref="userdao"></property>
+    </bean>
+
+</beans>

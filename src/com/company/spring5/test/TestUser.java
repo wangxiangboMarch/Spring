@@ -1,5 +1,7 @@
 package com.company.spring5.test;
 
+import com.company.spring5.Book;
+import com.company.spring5.Orders;
 import com.company.spring5.User;
 import org.junit.Test;
 
@@ -18,6 +20,12 @@ public class TestUser {
         User user = context.getBean("user", User.class);
         System.out.println(user);
         user.add();
+
+        Book book = context.getBean("book", Book.class);
+        book.testBook();
+
+        Orders orders = context.getBean("orders", Orders.class);
+        orders.testOrders();
 
         /**
          *  IOC 基于容器完成； 容器的底层就是工厂模式
