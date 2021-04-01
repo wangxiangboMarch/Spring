@@ -3,12 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userdao" class="com.company.spring5.dao.UserDaoImp"></bean>
+    <bean id="userDao" class="com.company.spring5.dao.UserDaoImp"></bean>
 
     <bean id="userServer" class="com.company.spring5.server.UserServer">
-        <!--注入dao对象-->
+        <!--注入dao对象 外部bean-->
         <!--ref 要和UserDao 里面的id 值一样-->
-        <property name="userDao" ref="userdao"></property>
+        <property name="userDao" ref="userDao"></property>
     </bean>
+
+    <!-- 注入内部bean 和 级联赋值 （一对多） -->
 
 </beans>
