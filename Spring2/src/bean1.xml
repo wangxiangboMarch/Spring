@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 集合类型属性的配置-->
+    <bean id="stu" class="com.company.spring5.collectiontype.Stu">
+        <!-- 数组类型属性的配置-->
+        <property name="courses">
+            <!-- list 和 Array 都可以-->
+            <array>
+                <value>java课程</value>
+                <value>Swift课程</value>
+            </array>
+        </property>
+        <!-- list类型属性的配置-->
+        <property name="list">
+            <list>
+                <value>大三</value>
+                <value>小三</value>
+            </list>
+        </property>
+        <!-- map类型属性的配置-->
+        <property name="maps">
+            <map>
+                <entry key="java" value="100"></entry>
+                <entry key="Swift" value="109"></entry>
+            </map>
+        </property>
+        <!-- set类型属性的配置-->
+        <property name="sets">
+            <set>
+                <value>mysql</value>
+                <value>oracol</value>
+            </set>
+        </property>
+
+    </bean>
+
+</beans>
