@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 德鲁伊连接池 直接配置-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        &lt;!&ndash;驱动名称&ndash;&gt;-->
+<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
+<!--        <property name="url" value="jdbc:mysql://locaqlhost:3306/userDb"></property>-->
+<!--        <property name="username" value="root"></property>-->
+<!--        <property name="password" value="root"></property>-->
+<!--    </bean>-->
+
+
+    <!-- 引入名称空间 context-->
+    <!-- 德鲁伊连接池 引入外部的属性文件-->
+    <!-- 经常使用在数据库的配置中-->
+    <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <!--驱动名称-->
+        <property name="driverClassName" value="${prop.driverClassName}"></property>
+        <property name="url" value="${prop.url}"></property>
+        <property name="username" value="${prop.username}"></property>
+        <property name="password" value="${prop.password}"></property>
+    </bean>
+</beans>

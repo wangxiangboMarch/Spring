@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启组件扫描-->
+    <!--
+        多个包
+        1、可以逗号隔开
+        2、上层包目录
+        -->
+    <context:component-scan base-package="com.company"></context:component-scan>
+    <!--默认有个过滤的规则 -->
+<!--    <context:component-scan base-package="com.company" use-default-filters="false">-->
+<!--        &lt;!&ndash;扫描哪一个 &ndash;&gt;-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--        &lt;!&ndash;不扫描哪一个 &ndash;&gt;-->
+<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--    </context:component-scan>-->
+
+</beans>
