@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "per",
+      "type": "com.wxb.bean.Pet",
+      "sourceType": "com.wxb.bean.Pet"
+    }
+  ],
+  "properties": [
+    {
+      "name": "per.name",
+      "type": "java.lang.String",
+      "sourceType": "com.wxb.bean.Pet"
+    },
+    {
+      "name": "per.weight",
+      "type": "java.lang.String",
+      "sourceType": "com.wxb.bean.Pet"
+    }
+  ],
+  "hints": []
+}
